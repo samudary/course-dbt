@@ -1,0 +1,27 @@
+version: 2
+
+sources:
+  - name: postgres
+    schema: public
+    database: raw
+    tables:
+      - name: users
+        description: Users or potential customers
+
+      - name: events
+        description: Web page view information with associated order if applicable
+
+      - name: products
+        description: A list of products in our catalog
+
+      - name: order_items
+        description: Items included in an order
+
+      - name: promos
+        description: Sale promotions offered with their applicable discounts and expiry
+
+      - name: orders
+        description: Orders placed by users
+
+      - name: addresses
+        description: Users' addresses
